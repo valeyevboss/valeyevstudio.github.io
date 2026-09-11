@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValeyevStudio | Nikita Valeyev</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Шапка / Навигация -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand">
+                <img src="assets/images/logo-chromo.png" alt="ValeyevStudio Logo" class="nav-logo">
+                <span class="brand-name">ValeyevStudio</span>
+            </a>
+            <nav class="nav-links">
+                <a href="https://muz.lc/nikitavaleyev" target="_blank" class="nav-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    Обо мне / Музыка
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный блок (Hero) -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">ValeyevStudio Owner & Lead Dev</div>
+                <h1 class="hero-title">Никита Валеев</h1>
+                <p class="hero-subtitle">
+                    Доброго времени суток! На связи Валеев Никита Юрьевич, основатель и владелец студии <strong>ValeyevStudio</strong>. Занимаюсь программированием, веб-разработкой и UX/UI дизайном.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Проекты в разработке</a>
+                    <a href="#scripts" class="btn btn-outline">Готовые LUA Скрипты</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="image-card">
+                    <img src="assets/images/nikitavaleyev.png" alt="Никита Валеев" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Стек и Инструменты -->
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">Стек и инструменты</h2>
+            <div class="grid grid-3">
+                <div class="card tech-card">
+                    <div class="card-icon">?</div>
+                    <h3>Любимые языки</h3>
+                    <div class="tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Lua</span>
+                        <span class="tag">Java</span>
+                    </div>
+                </div>
+                <div class="card tech-card">
+                    <div class="card-icon">???</div>
+                    <h3>Мои инструменты</h3>
+                    <div class="tags">
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Figma</span>
+                        <span class="tag">Adobe Photoshop</span>
+                    </div>
+                </div>
+                <div class="card tech-card">
+                    <div class="card-icon">??</div>
+                    <h3>Плагины и Среда</h3>
+                    <div class="tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Git / GitHub</span>
+                        <span class="tag">MoonLoader / ImGui</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- В разработке -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">В разработке</h2>
+            <div class="grid grid-2">
+                <div class="card project-card dev-card">
+                    <div class="project-header">
+                        <span class="status-badge">In Development</span>
+                        <h3>PixelFPS</h3>
+                    </div>
+                    <p class="project-desc">Программа для отображения FPS с расширенной кастомизацией.</p>
+                </div>
+                <div class="card project-card dev-card">
+                    <div class="project-header">
+                        <span class="status-badge">In Development</span>
+                        <h3>PixelKey</h3>
+                    </div>
+                    <p class="project-desc">Программа для поиска тональности трека и не только.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Готовые LUA Скрипты -->
+    <section id="scripts" class="scripts-section">
+        <div class="container">
+            <h2 class="section-title">Уже готово: LUA скрипты для SAMP / Arizona RP</h2>
+            <div class="grid grid-3">
+                <div class="card script-card">
+                    <div class="script-badge">Lua Script</div>
+                    <h3>Pixel Army Helper</h3>
+                    <p>Помощник для армий/ТСР с конфигурацией, сохранением настроек и кастомными хоткеями.</p>
+                </div>
+                <div class="card script-card">
+                    <div class="script-badge">Lua Script</div>
+                    <h3>Pixel Fisher Helper</h3>
+                    <p>Удобный скрипт для ловли рыбы и удобного управления процессом.</p>
+                </div>
+                <div class="card script-card">
+                    <div class="script-badge">Lua Script</div>
+                    <h3>Pixel Members Online</h3>
+                    <p>Информативный оверлей для отслеживания онлайна фракции.</p>
+                </div>
+                <div class="card script-card">
+                    <div class="script-badge">Lua Script</div>
+                    <h3>Pixel XYZ Helper</h3>
+                    <p>Отображение координат и положения в игре в реальном времени.</p>
+                </div>
+                <div class="card script-card">
+                    <div class="script-badge">Lua Script</div>
+                    <h3>Pixel Screen Checker</h3>
+                    <p>Утилита для проверки валидности экрана и скриншотов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <img src="assets/images/logo-chromo.jpg" alt="Logo" class="footer-logo">
+                <p>&copy; 2026 ValeyevStudio. Все права защищены. Никита Валеев.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://muz.lc/nikitavaleyev" target="_blank" class="social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                    Muz.lc
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
