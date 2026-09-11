@@ -166,24 +166,32 @@ body {
     transform: translateY(-2px);
 }
 
-.hero-image-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
 .image-card {
     position: relative;
     border-radius: var(--radius-lg);
-    overflow: hidden;
+    overflow: hidden; /* Обрезает изображение за пределами карточки при увеличении */
     border: 1px solid var(--card-border);
     box-shadow: 0 20px 40px rgba(0,0,0,0.5);
     max-width: 320px;
+    transition: border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .hero-img {
     width: 100%;
     display: block;
     object-fit: cover;
+    /* Плавность изменения масштаба */
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Эффект при наведении на карточку */
+.image-card:hover .hero-img {
+    transform: scale(1.06); /* Увеличивает фото на 6% */
+}
+
+.image-card:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
 }
 
 /* Sections & Cards */
